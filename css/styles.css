@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../images/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#annual_income {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.result{
+  display: flex;
+  flex-direction:column
+}
+.result p {
+  margin-top: 10px;
+  color:#fff;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: start;
+}
+
+.result span {
+  min-width: 7em;
+  padding: 10px;
+    color: #4ef7ff;
+
+/*   padding-left: 2em; */
+  font-size: 1.2em;
+  font-weight: 700;
+  border: 2px solid #7ddbff;
+  border-radius: 5px;
+}
+
+.box {
+  margin: auto;
+  margin-top: 5%;
+  max-width: 720px;
+  min-width: 300px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+.box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 2em;
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .user-box input:focus ~ label,
+.box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.box form button {
+  
+  color: #fff;
+  outline: none;
+  border: none;
+  line-height: 0;
+  background: #070b1c;
+  transition: 0.5s;
+}
+
+.box button:hover, .box button:focus {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: -1px 12px 30px -2px #07dee946;
+}

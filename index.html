@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://getbootstrap.com/docs/4.4/examples/cover/# -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+
+    <title>Tax Calculator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style></style>
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center" data-gr-c-s-loaded="true">
+    <div class="box">
+      <h2>Tax Calculator</h2>
+      <form class="form-group">
+        <div class="input-group user-box">
+          <input
+            type="number"
+            id="annual_income"
+            class="form-control"
+            step="0.01"
+            required
+          />
+          <label>Annual Income</label>
+
+          <div class="input-group-append">
+            <button class="btn btn-lg btn-primary" type="submit">
+              Calculate
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="mt-5 mb-3 result d-none">
+        <p>CRA:</p>
+        <span class="cra"></span>
+        <p>Taxable Income:</p>
+        <span class="ti"></span>
+        <p>Annual Tax:</p>
+        <span class="at"></span>
+      </div>
+    </div>
+
+    <script src="js/tax.js"></script>
+  </body>
+</html>
